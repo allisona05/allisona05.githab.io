@@ -1,58 +1,41 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Название сайта</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Пример с фоном и прокруткой</title>
+    <link rel="stylesheet" href="./css/stylest.css">
 </head>
 <body>
 
-    <!-- Шапка сайта -->
-    <header id="site-header">
-        <div class="container">
-            <img src="https://png.pngtree.com/png-clipart/20230501/original/pngtree-mushroom-girl-3d-cute-expression-png-image_9129145.png" alt="Логотип" class="logo">
-            <h1>Sudeikina Alina</h1>
-        </div>
-    </header>
-
-    <!-- Навигационное меню -->
-    <nav id="main-nav">
-        <div class="container">
-            <ul>
-                <li><a href="./navBar/main.html">Главная</a></li>
-                <li><a href="./navBar/about.html">О нас</a></li>
-                <li><a href="./navBar/services.html">Услуги</a></li>
-                <li><a href="./navBar/contacts.html">Контакты</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Основное содержимое с таблицей -->
-        <main class="container">
-            <div id="link-list">
-                <ul>
-                    <li><a href="http://www.kubsu.ru" class="button">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
-                    <li><a href="https://www.kubsu.ru/index.php" class="button">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
-                    <li>
-                        <a href="https://github.com/allisona05" class="button">
-                            <img src="https://png.pngtree.com/png-clipart/20230501/original/pngtree-mushroom-girl-3d-cute-expression-png-image_9129145.png"
-                                 width="40%" height="40%" alt="Описание изображения">
-                        </a>
-                    </li>
-                    <li><a href="web.html" class="button">Сокращенная ссылка на внутреннюю страницу</a></li>
-                    <li><a href="index.html" class="button">Сокращенная ссылка на главную страницу</a></li>
-                    <li><a href="#section1" class="button">Перейти к Разделу 1</a></li>
-                    <li><a href="https://yandex.ru/search/?text=мультяшные+живые+грибочки&lr=35&p=2" class="button">Перейти по ссылке с тремя параметрами</a></li>
-                    <li><a href="https://example.com/page.html?id=123" class="button">Перейти по ссылке с параметром id</a></li>
-                    <li><a href="./web.html" class="button">Перейти на страницу web.html</a></li>
-                    <li><a href="./about.html" class="button">Перейти на about</a></li>
-                    <li><a href="../fileLVL1.html" class="button">Каталог один уровнем выше</a></li>
-                    <li><a href="../../fileLVL2.html" class="button">Каталог двумя уровнями выше</a></li>
-                </ul>
+    <!-- Фон с изображением и контентом на первом экране -->
+    <section class="mainView">
+        <header class="header">
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="Логотип" class="logo">
             </div>
-        
+            <div class="nav-menu">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./navBar/About.html">About us</a>
+                <a href="./navBar/Packages.html">Packages</a>
+            </nav>
+        </div>
 
+        </header>
+        <div class="mainViewContent">
+            <h1>Your Imagination Is  <br>
+                Your Only Limit</h1>
+            <p>We always try to make our customer Happy. We provide all kind of facilities.  <br>
+                Your Satisfaction is our main priority</p>
+            <nav> 
+            <a href="./navBar/Main.html">Discover more</a>
+           </nav>
+        </div>
+    </section>
+
+    <!-- Основной контент после прокрутки -->
+    <section id="section1">
         <h2>Таблица с данными</h2>
         <table>
             <thead>
@@ -101,7 +84,9 @@
                 </tr>
             </tbody>
         </table>
+    </section>
 
+    <section id="section2">
         <div id="registration-form">
             <h2>Форма регистрации</h2>
             <form action="/submit" method="post">
@@ -163,15 +148,13 @@
                 <button type="submit">Сохранить</button>
             </form>
         </div>
+    </section>
 
-    </main>
-
-    <!-- Подвал сайта -->
-    <footer id="site-footer">
-        <div class="container">
-            <p>&copy; 2024 Allsiona. Все права защищены.</p>
-        </div>
-    </footer>
-
+        <!-- Подвал сайта -->
+        <footer id="site-footer">
+            <div class="container">
+                <p>&copy; 2024 Allsiona. Все права защищены.</p>
+            </div>
+        </footer>
 </body>
 </html>
