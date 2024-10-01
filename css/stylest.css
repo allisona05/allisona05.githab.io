@@ -64,9 +64,9 @@ body, html {
 }
 
 .nav-menu {
-    flex-grow: 1; /* Занимаем все оставшееся пространство */
+ 
     display: flex;
-    justify-content: center; /* Центрирование элементов меню */
+    justify-content: right; /* Центрирование элементов меню */
 }
 
 .header nav a {
@@ -91,6 +91,11 @@ section {
     max-width: 960px;
     margin: 0 auto; /* Центрирование */
     padding: 0 15px; 
+    text-align: left;
+}
+
+.merge {
+    text-align: center;
 }
 
 #section2 {
@@ -111,8 +116,6 @@ select {
     width: 200px;
 }
 
-
-
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -132,25 +135,33 @@ select {
 }
 
 #registration-form {
-    text-align: center;
+    text-align: left;
 }
 /* Таблица */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    text-align: left;
+    
 }
 
 thead th {
-    background-color: #444;
+    background-color: #3a5041;
     color: white;
     padding: 10px;
     text-align: left;
+    border: 2px solid #3686cc;
+
 }
 
+thead tr {
+    background-color: #3686cc;
+
+}
 tbody td {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 2px solid #3686cc;
 }
 
 tbody .odd {
@@ -168,11 +179,15 @@ tbody .even {
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
+    padding-left: 20px;
+    text-align: left; /* Выравнивание текста по левому краю */
+
 }
 
 #dolgi {
         background-color: rgba(0, 88, 83, 0.1);
         max-width: 960px;
         margin: 0 auto; /* Центрирование */
-        padding: 0 15px; 
+        padding: 0 15px;
+        text-align: left;
 }
